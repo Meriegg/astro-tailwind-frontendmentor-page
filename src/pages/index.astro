@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NewSection from "../components/NewSection/NewSection.astro";
+import Recommended from "../components/Recommended/Recommended.astro";
+---
+
+<Layout title={"Users"}>
+  <div class="mt-12 grid grid-cols-2-1 gap-10 lg:flex lg:flex-col">
+    <div class="flex flex-col gap-6">
+      <img src="images/image-web-3-desktop.jpg" alt="" />
+      <div class="grid grid-cols-2 gap-10 md:flex md:flex-col">
+        <h1 class="text-5xl text-veryDarkBlue font-extrabold max-w-xs">
+          The Bright Future Of Web 3.0?
+        </h1>
+        <div class="h-full flex flex-col justify-between">
+          <p class="text-sm text-darkGrayishBlue">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            eos consequatur voluptatum quo excepturi aliquam nemo, voluptates,
+            id amet voluptatibus, nihil ipsa officia perspiciatis. Dicta sint
+            tenetur eaque non nemo?
+          </p>
+          <button
+            class="transition-all duration-300 mt-6 bg-softRed hover:bg-veryDarkBlue text-white py-4 px-10 font-bold tracking-[5px] w-fit"
+            >READ MORE</button
+          >
+        </div>
+      </div>
+    </div>
+    <NewSection />
+  </div>
+  <Recommended />
+</Layout>

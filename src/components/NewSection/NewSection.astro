@@ -1,0 +1,25 @@
+---
+import Article from "./Article.astro";
+import Spacer from "./Spacer.astro";
+---
+
+<div class="h-full bg-veryDarkBlue px-6 py-9">
+  <h1 class="text-softOrange font-bold text-4xl">New</h1>
+
+  <div class="flex flex-col justify-evenly h-full lg:gap-12 lg:mt-12">
+    <Article
+      title="Hydrogen VS Electric Cars"
+      description="Will Hydrogen-fueled cars ever catch up to EVs?"
+    />
+    <Spacer />
+    <Article
+      title="The Downside of AI Artistry"
+      description="What are the possible adverse effects of on-demand AI image generation?"
+    />
+    <Spacer />
+    <Article
+      title="Is VC Funding Drying Up?"
+      description="Private funding by VC firms is down 50% YOY. We take a look at what that means."
+    />
+  </div>
+</div>
